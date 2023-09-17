@@ -98,5 +98,12 @@ public class DateTimeAPI {
         // creating a new ZonedDateTime object
         ZonedDateTime zone = ZonedDateTime.parse(stringDate);
         System.out.println(zone);
+
+
+        //Get Week of Day from given date
+        LocalDate dt = LocalDate.parse("2018-01-02");
+        DayOfWeek str = dt.getDayOfWeek();
+        System.out.println(str.toString());
+
     }
 }
